@@ -22,29 +22,31 @@
         <div class="container">
             <a class="navbar-brand" href="#home" id="start">Portfolio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="nav navbar-nav ml-auto">
-
                     <a class="nav-item nav-link" href="#bio">About</a>
-                    <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-item nav-link" href="#portfolio">Projects</a>
                     <a class="nav-item nav-link" href="#contact">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid bg-white" >
+    <div class="jumbotron jumbotron-fluid bg-white">
         <div class="container" id="home">
             <p id="name">Ryan Sousa</p>
             <p id="title">Full Stack Web Developer</p>
-            <p id="location">Seattle, WA</p>
+            <div class="row mx-auto">
+                <i class="fas fa-map-marker-alt fa-2x"> <a class="nav-item nav-link" href="https://www.google.com/maps/place/Seattle,+WA/@47.6129432,-122.4821475,11z/data=!3m1!4b1!4m5!3m4!1s0x5490102c93e83355:0x102565466944d59a!8m2!3d47.6062095!4d-122.3320708"></a></i>
+                <p id="location"> Seattle, WA</p>
+            </div>
         </div>
     </div>
 
-    <div class="container2 col-11 mx-auto">
+    <div class="container2 mx-auto">
         <p id="bio">
             <h1>About Me</h1>
             <img src="assets/images/me.jpg" class="rounded mx-auto d-block" height="200" width="155" alt="Ryan">
@@ -72,9 +74,8 @@
         </p>
     </div>
 
-
-    <div class="container2 col-11 mx-auto" id="portfolio">
-        <h1>Portfolio</h1>
+    <div class="container2 mx-auto" id="portfolio">
+        <h1>Projects</h1>
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -84,24 +85,26 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/images/search.png" class="d-block w-100" alt="Eventify your map">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2><a class="nav-item nav-link" 
+                    <div class="carousel-caption d-none d-md-block" id="carousel1">
+                        <h2><a class="nav-item1 nav-link"
                                 href="https://frantzcfelix.github.io/Eventify-your-map/">Eventify your map</a></h2>
-                        <p>Group projrct using API's to get event info and display it on google</p>
+                        <p>JavaScript, jQuery, Bulma, Moment.js, Ticketmaster API, Google Maps API, W3C Geolocation API</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="assets/images/planner.png" class="d-block w-100" alt="Planner">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="carousel-caption d-none d-md-block" id="carousel2">
+                        <h2><a class="nav-item1 nav-link"
+                            href="https://resousa.github.io/daily-work-planner/">Day planner</a></h2>
+                        <p>JavaScript, jQuery, Bootstrap, Moment.js, local storage</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/images/quiz.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <img src="assets/images/quiz.png" class="d-block w-100" alt="Quiz">
+                    <div class="carousel-caption d-none d-md-block" id="carousel3">
+                        <h2><a class="nav-item2 nav-link"
+                            href="https://resousa.github.io/coding-quiz/">Code Quiz</a></h2>
+                        <p>JavaScript, jQuery, Bootstrap</p>
                     </div>
                 </div>
             </div>
@@ -116,20 +119,21 @@
         </div>
     </div>
 
-    <div class="container2 col-11 mx-auto" id="contact">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Contact</h1>
-                <i class="fab fa-github-square fa-7x"><a class="nav-item nav-link" 
-                    href="https://github.com/resousa">github</a></i>
-                <i class="fab fa-linkedin fa-7x"><a class="nav-item nav-link" 
-                    href="https://www.linkedin.com/in/sousa-ryan/">linkedin</a></i>
-                <i class="fas fa-envelope-square fa-7x"><a href="mailto:sousa.ryan4@gmail.com">email</a></i>
-            </div>
+    <div class="container2 mx-auto">
+        <h1>Contact</h1>
+        <div class="row d-flex justify-content-around" id="logo">
+            <i class="fab fa-github-square fa-7x"></i>
+            <i class="fab fa-linkedin fa-7x"></i>
+            <i class="fas fa-envelope-square fa-7x"></i>
+            <i class="fas fa-poll-h fa-7x"></i>
+        </div>
+        <div class="row d-flex justify-content-around" id="contact">
+            <a class="nav-item nav-link" href="https://github.com/resousa">github</a>
+            <a class="nav-item nav-link" href="https://www.linkedin.com/in/sousa-ryan/">linkedin</a>
+            <a class="nav-item nav-link" href="mailto:sousa.ryan4@gmail.com">email</a>
+            <a class="nav-item nav-link" href="https://github.com/resousa/resousa.github.io/blob/master/assets/images/Resume.pdf">resume</a>
         </div>
     </div>
-
-  
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -140,10 +144,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-
 </body>
-
-
-
 </html>
