@@ -91,11 +91,11 @@ h1 {
     text-decoration: none;
     color: gray;
 }
-.nav-item1 {
+#whiteLink {
     text-decoration: none;
     color: white;
 }
-.nav-item2 {
+#blackLink {
     text-decoration: none;
     color: black;
 }
