@@ -20,10 +20,10 @@ body {
     font-family: 'Roboto', sans-serif, 'Georgia', Times, 'Times New Roman', serif;
     font-weight: bolder;
     background-color: #dbcbd8;
-    background-image: linear-gradient(316deg, #dbcbd8 0%, #2e4057 74%);
+    background-image: linear-gradient(316deg, #e9e0e7 0%, #16365f 100%);
     -webkit-background-clip: text;
     background-clip: text;
-    animation: animate 20s linear infinite;
+    animation: animate 10s linear infinite;
     background-size: 1000%;
 }
 @keyframes animate
@@ -63,10 +63,10 @@ h1 {
 #logo {
     color: transparent;
     background-color: #dbcbd8;
-    background-image: linear-gradient(316deg, #dbcbd8 0%, #2e4057 74%);
+    background-image: linear-gradient(316deg, #e9e0e7 0%, #16365f 100%);
     -webkit-background-clip: text;
     background-clip: text;
-    animation: animate 20s linear infinite;
+    animation: animate 10s linear infinite;
     background-size: 1000%;
 }
 
